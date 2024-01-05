@@ -1,5 +1,10 @@
 
 body{
-    background-color: aqua;
+    background-color: rgb(70, 101, 158);
     color: black
+}
+
+
+button {
+    padding: 1rem;
 }
