@@ -1,10 +1,83 @@
+@font-face {
+  font-family: Chillax;
+  src: url("chillax.otf");
+}
 
-body{
-    background-color: rgb(70, 101, 158);
-    color: black
+:root{
+    --light-purple: #622EF5;
+    --dark-purple: #29047A;
+    --light-blue: #2EDDF5;
+    --white: #fff;
 }
 
 
-button {
-    padding: 1rem;
+body {
+  background-color: rgb(14, 53, 124);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--dark-purple);
+  font-family: "chillax";
+}
+
+.calc-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(158, 58, 58);
+}
+
+.calc-screen {
+  background-color: rgb(184, 184, 184);
+  height: 200px;
+  padding: 20px, 40px, 20px, 40px;
+  border-radius: 1rem;
+  border: 2px;
+  box-shadow: 6px 6px 0px 2px #24183e;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: "chillax";
+  display: flex;
+  justify-content: right;
+}
+
+.calc-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc-btn-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+}
+
+.calc-button {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #24183e;
+  padding: 20px, 40px, 20px, 40px;
+  box-shadow: 6px 6px 0px 2px #24183e;
+  border-radius: 1rem;
+  font-size: 2rem;
+  font-family: "chillax";
+}
+
+#bottom-row {
+  display: flex;
+}
+
+.bottom-row-btns-right {
+  display: flex;
+  gap: 10px;
+}
+
+#zero {
+  width: 100%;
 }
